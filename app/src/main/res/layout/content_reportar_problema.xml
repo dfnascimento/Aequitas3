@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.diego.prototipo.app.ReportarProblema"
+    tools:showIn="@layout/activity_reportar_problema">
+
+
+    <LinearLayout
+        android:layout_width="344dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+
+
+        <LinearLayout
+            android:layout_width="304dp"
+            android:layout_height="34dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight="0.03">
+
+            <TextView
+                android:id="@+id/textViewTipo"
+                android:layout_width="70dp"
+                android:layout_height="26dp"
+                android:text="Tipo:" />
+
+            <Spinner
+                android:id="@+id/spinnerTipo"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.83" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="304dp"
+            android:layout_height="34dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight="0.03">
+
+            <TextView
+                android:id="@+id/textViewMarcacao"
+                android:layout_width="70dp"
+                android:layout_height="26dp"
+                android:text="Marcação:" />
+
+            <Spinner
+                android:id="@+id/spinnerMarcação"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.83" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewDescricao"
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:text="Descrição:" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="307dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:layout_weight="0.19" />
+
+
+        <LinearLayout
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textViewFoto"
+                android:layout_width="70dp"
+                android:layout_height="26dp"
+                android:text="Foto:" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/buttonTirarFoto"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_camera"
+                app:backgroundTint="@color/blue"/>
+
+            <!--       -->
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
